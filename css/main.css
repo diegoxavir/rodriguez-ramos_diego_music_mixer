@@ -1,0 +1,32 @@
+body {
+    background-color: brown;
+    }
+    
+    main {
+        background-image: url(../images/background_image.jpg);
+        background-repeat: no-repeat;
+        background-position:center;
+        height: 690px;
+    
+    }
+    
+    div {
+        margin-top: 578px;
+        color: blue;
+        background-color: rgb(47, 11, 11);
+        height: 70px;
+        width: 70px;
+        border-radius: 30px;
+        border: 8px solid rgb(80, 30, 7);
+        text-align: center;
+    }
+    
+    #inst-3 {
+        margin-left: 60px;
+    }
+    
+    #inst-4 {
+        margin-left: 60px;
+    }
+    
+    
