@@ -1,32 +1,25 @@
 body {
-    background-color: brown;
-    }
-    
-    main {
-        background-image: url(../images/background_image.jpg);
-        background-repeat: no-repeat;
-        background-position:center;
-        height: 690px;
-    
-    }
-    
-    div {
-        margin-top: 578px;
-        color: blue;
-        background-color: rgb(47, 11, 11);
-        height: 70px;
-        width: 70px;
-        border-radius: 30px;
-        border: 8px solid rgb(80, 30, 7);
-        text-align: center;
-    }
-    
-    #inst-3 {
-        margin-left: 60px;
-    }
-    
-    #inst-4 {
-        margin-left: 60px;
-    }
-    
-    
+    background-image: url(../images/body-background.jpg);
+    text-align: center;
+}
+
+#main-screen {
+    display: flex;
+    margin: 0 auto;
+    background-image: url(../images/main-background.jpg);
+    height: 730px;
+    width: 1200px;
+    border: 8px solid rgb(0, 71, 0);
+    border-radius: 40px;
+}
+
+.drop-zone {
+    display: inline;
+    width: 258px;
+    height: 112px;
+    margin-top: 436px;
+}
+
+.dz1 {
+    margin-left: 67px; 
+}
