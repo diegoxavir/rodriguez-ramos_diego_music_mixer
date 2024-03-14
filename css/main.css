@@ -6,7 +6,8 @@ body {
 #main-screen {
     display: flex;
     margin: 0 auto;
-    background-image: url(../images/main-background.jpg);
+    background-image: url(../images/pond.jpg);
+    background-size:contain;
     height: 730px;
     width: 1200px;
     border: 8px solid rgb(0, 71, 0);
@@ -22,4 +23,43 @@ body {
 
 .dz1 {
     margin-left: 67px; 
+}
+
+.selection-box {
+    width: 1164px;
+    height: 300px;
+    background-color: #DCFFCC;
+    border: solid 8px #00641B;
+    display: flex;
+    margin: 0 auto;
+    margin-top:40px;
+}
+
+.frog-box {
+    width: 207px;
+    height: 207px;
+    background-color: rgb(236, 255, 237);
+    border: solid 1px #707070;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 39px;
+    margin-bottom: 39px;
+}
+
+#guitar-frog {
+    margin-left: 32px;
+    margin-right: 0px;
+}
+
+#drums-frog {
+margin-left: 20px;
+}
+
+#bass-frog {
+    margin-right: 20px;
+}
+
+#singing-frog {
+    margin-right: 32px;
+    margin-left: 0px;
 }
