@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="arms" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 201 71">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #a2f9a4;
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M194.33,28.77s-86.83-53.73-185.33,0c0,0-15.83,14.73,3.33,29.23s134,10.5,134,10.5l-38-18.45,81.33,14.2s16.5-12.21,4.67-35.48Z"/>
+</svg>
