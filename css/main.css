@@ -17,13 +17,18 @@ body {
 .drop-zone {
     display: inline;
     width: 258px;
-    height: 112px;
+    height: 260px;
     margin-top: 436px;
+    background-image: url(../images/lillypad.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 
 .dz1 {
     margin-left: 67px; 
 }
+
+
 
 .selection-box {
     width: 1164px;
