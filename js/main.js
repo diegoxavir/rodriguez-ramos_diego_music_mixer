@@ -2,10 +2,11 @@
 //Variables
 let theFrogs = document.querySelectorAll(".frog-box img"),
 	dropZones = document.querySelectorAll('.drop-zone'),
-    draggedFrog;
+    draggedFrog,
+    currentAudio;
 
     ////audio controls////
-    const theAudioEl = document.querySelector('#audioEl'),
+    const theAudioEl = document.querySelector('.audioEl'),
             playButton = document.querySelector('#playButton'),
             pauseButton = document.querySelector('#pauseButton'),
             rewindButton = document.querySelector('#rewindButton'),
@@ -19,6 +20,13 @@ let theFrogs = document.querySelectorAll(".frog-box img"),
 function handleStartDrag() {
     console.log('started dragging frog:', this);
     draggedFrog = this;
+
+    const audioId = draggedFrog.dataset.audio;
+    const audioElement = document.querySelector(`#${audioId}`);
+
+    audioElement.loop = true;
+
+    audioElement.classList.add('playing');
 }
 
 function handleDragOver(event) {
@@ -30,37 +38,44 @@ function handleDrop(event) {
     event.preventDefault();
     console.log('dropped on the zone');
 
+    this.appendChild(draggedFrog);
 
-    this.appendChild(draggedFrog)
+    const audioId = draggedFrog.dataset.audio;
+    const audioElement = document.querySelector(`#${audioId}`);
+
+    audioElement.play();
+
 
 }
 
 //audio 
 
-function loadAudio() {
-    let newSrc = `music/${this.dataset.trackref}.mp3`
-    theAudioEl.src = newSrc;
-    theAudioEl.load();
-    playAudio();
-}
+
 
 function playAudio() {
-    theAudioEl.play();
+    const audioElements = document.querySelectorAll('.playing');
+    audioElements.forEach(audio => audio.play());
 }
 
 function restartAudio() {
-    theAudioEl.currentTime = 0;
-    playAudio()
+    const audioElements = document.querySelectorAll('.playing');
+    audioElements.forEach(audio => {
+        audio.currentTime = 0;
+        audio.play();
+    });
 }
 
 function pauseAudio() {
-    theAudioEl.pause();
+    const audioElements = document.querySelectorAll('.playing');
+    audioElements.forEach(audio => audio.pause());
 }
 
 function setVolume() {
-    console.log(this.value);
-
-    theAudioEl.volume = this.value / 100;
+    const volume = this.value / 100;
+    const audioElements = document.querySelectorAll('.playing');
+    audioElements.forEach(audio => {
+        audio.volume = volume;
+    });
     displayVolume();
 }
 

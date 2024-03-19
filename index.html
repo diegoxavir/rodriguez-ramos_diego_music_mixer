@@ -16,9 +16,10 @@
 			<div class="drop-zone dz4"></div>
         </div>
         <div class="selection-box">
-            <div id="guitar-frog" class="frog-box"><img data-trackref="guitar" src="images/guitar_frog.svg" alt="frog playing a guitar"></div>
-            <div id="drums-frog" class="frog-box"><img data-trackref="drums" src="images/guitar_frog2.svg" alt="frog playing drums"></div>
-            
+            <div id="guitar-frog" class="frog-box"><img data-audio="guitar" src="images/guitar_frog.svg" alt="frog playing a guitar"></div>
+            <audio class="audioEl" id="guitar" src="music/guitar.mp3"></audio>
+            <div id="drums-frog" class="frog-box"><img data-audio="drums" src="images/guitar_frog2.svg" alt="frog playing drums"></div>
+            <audio class="audioEl" id="drums" src="music/drums.mp3"></audio>
             <section class="audio-controls">
                 <button id="playButton">PLAY</button>
                 <button id="pauseButton">PAUSE</button>
@@ -32,8 +33,10 @@
                 step="1">
                 
             </section>
-            <div id="bass-frog" class="frog-box"><img data-trackref="bass" src="images/guitar_frog3.svg" alt="frog playing a bass"></div>
-            <div id="singing-frog" class="frog-box"><img data-trackref="keys" src="images/guitar_frog4.svg" alt="frog singing"></div>
+            <div id="bass-frog" class="frog-box"><img data-audio="bass" src="images/guitar_frog3.svg" alt="frog playing a bass"></div>
+            <audio class="audioEl" id="bass" src="music/bass.mp3"></audio>
+            <div id="singing-frog" class="frog-box"><img data-audio="keys" src="images/guitar_frog4.svg" alt="frog singing"></div>
+            <audio class="audioEl" id="keys" src="music/keys.mp3"></audio>
         </div>
     </main>
     <script src="js/main.js"></script>
