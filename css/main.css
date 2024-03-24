@@ -3,12 +3,21 @@ body {
     text-align: center;
 }
 
+h1 {
+    color: rgb(4, 128, 0);
+    font-size: 50px;
+}
+
+.hidden {
+    display: none;
+}
+
 #main-screen {
     display: flex;
     margin: 0 auto;
-    background-image: url(../images/pond.jpg);
-    background-size:contain;
-    height: 730px;
+    background-image: url(../images/pond3.jpg);
+    background-size:cover;
+    height: 600px;
     width: 1200px;
     border: 8px solid rgb(0, 71, 0);
     border-radius: 40px;
@@ -18,7 +27,7 @@ body {
     display: inline;
     width: 258px;
     height: 260px;
-    margin-top: 436px;
+    margin-top: 306px;
     background-image: url(../images/lillypad.svg);
     background-repeat: no-repeat;
     background-position: bottom;
@@ -38,6 +47,7 @@ body {
     display: flex;
     margin: 0 auto;
     margin-top:40px;
+    border-radius: 40px;
 }
 
 .frog-box {
@@ -49,6 +59,26 @@ body {
     margin: 0 auto;
     margin-top: 39px;
     margin-bottom: 39px;
+    border-radius: 10px;
+
+
+}
+
+.animate {
+    animation: grow 2s ease-in-out infinite;
+
+}
+
+@keyframes grow {
+    0% {
+        scale: 100%;
+    }
+    50% {
+        scale: 90%;
+    } 
+    100% {
+        scale: 100%;
+    }
 }
 
 #guitar-frog {
@@ -67,4 +97,36 @@ margin-left: 20px;
 #singing-frog {
     margin-right: 32px;
     margin-left: 0px;
+}
+
+#playButton {
+    height: 50px;
+    width: 50px;
+}
+#pauseButton {
+    height: 50px;
+    width: 50px;
+}
+
+#rewindButton {
+    height:50px;
+    width:50px;
+    
+}
+
+.audio-controls {
+    margin-top: 100px;
+}
+
+#volumeControl {
+   accent-color: #00641B;
+}
+
+#volumeAmt {
+    margin-top: 20px;
+}
+
+.resetpage {
+    margin-left: 34%;
+    display: block;
 }

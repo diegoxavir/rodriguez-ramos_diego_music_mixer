@@ -2,8 +2,11 @@
 //Variables
 let theFrogs = document.querySelectorAll(".frog-box img"),
 	dropZones = document.querySelectorAll('.drop-zone'),
+    reset = document.querySelector('#resetBut'),
     draggedFrog,
     currentAudio;
+
+var frogs = document.querySelector(".frog-box img")
 
     ////audio controls////
     const theAudioEl = document.querySelector('.audioEl'),
@@ -45,7 +48,7 @@ function handleDrop(event) {
 
     audioElement.play();
 
-
+    draggedFrog.classList.add("animate");
 }
 
 //audio 
@@ -54,7 +57,11 @@ function handleDrop(event) {
 
 function playAudio() {
     const audioElements = document.querySelectorAll('.playing');
-    audioElements.forEach(audio => audio.play());
+    audioElements.forEach(audio => {
+        audio.play();
+        const frog = document.querySelector(`[data-audio="${audio.id}"]`);
+        frog.classList.add("animate");
+    });
 }
 
 function restartAudio() {
@@ -67,7 +74,11 @@ function restartAudio() {
 
 function pauseAudio() {
     const audioElements = document.querySelectorAll('.playing');
-    audioElements.forEach(audio => audio.pause());
+    audioElements.forEach(audio => {
+        audio.pause();
+        const frog = document.querySelector(`[data-audio="${audio.id}"]`);
+        frog.classList.remove("animate");
+    });
 }
 
 function setVolume() {
@@ -81,6 +92,10 @@ function setVolume() {
 
 function displayVolume() {
     volAmount.innerText = volSlider.value;
+}
+
+function refreshPage() {
+    location.reload();
 }
 
 
@@ -98,3 +113,4 @@ playButton.addEventListener('click', playAudio);
 pauseButton.addEventListener('click', pauseAudio);
 rewindButton.addEventListener('click', restartAudio);
 volSlider.addEventListener('click', setVolume);
+reset.addEventListener('click', resetButton);
