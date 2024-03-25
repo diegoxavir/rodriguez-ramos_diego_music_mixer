@@ -17,16 +17,16 @@
 			<div class="drop-zone dz4"></div>
         </div>
         <div class="selection-box">
-            <div id="guitar-frog" class="frog-box"><img data-audio="guitar" src="images/guitar_frog.svg" alt="frog playing a guitar" class="frog"></div>
+            <div id="guitar-frog" class="drop-zone frog-box"><img data-audio="guitar" src="images/guitar_frog.svg" alt="frog playing a guitar" class="frog"></div>
             <audio class="audioEl" id="guitar" src="music/guitar.mp3"></audio>
-            <div id="drums-frog" class="frog-box"><img data-audio="drums" src="images/guitar_frog2.svg" alt="frog playing drums" class="frog"></div>
+            <div id="drums-frog" class="drop-zone frog-box"><img data-audio="drums" src="images/drum-frog.svg" alt="frog playing drums" class="frog"></div>
             <audio class="audioEl" id="drums" src="music/drums.mp3"></audio>
             <section class="audio-controls">
                 <h2 class="hidden">Buttons</h2>
-                <button id="playButton"><img src="images/playbtn.svg" alt="play button"></button>
-                <button id="pauseButton"><img src="images/pause2_1.svg" alt="pause button"></button>
-                <button id="rewindButton"><img src="images/rewind3.svg" alt="rewind button"></button>
-                <button class=resetpage onclick="refreshPage()">Reset</button>
+                <button class="buttons" id="playButton"><img src="images/playbtn.svg" alt="play button"></button>
+                <button class="buttons" id="pauseButton"><img src="images/pausebtn.svg" alt="pause button"></button>
+                <button class="buttons" id="rewindButton"><img src="images/rewind2.svg" alt="rewind button"></button>
+                <button class="buttons resetpage" onclick="refreshPage()"><img src="images/rewind.svg" alt="reset button"></button>
 
                 <div id="volumeAmt"></div>
                 <input type="range" 
@@ -36,9 +36,9 @@
                 step="1">
                 
             </section>
-            <div id="bass-frog" class="frog-box"><img data-audio="bass" src="images/guitar_frog3.svg" alt="frog playing a bass" class="frog"></div>
+            <div id="bass-frog" class="drop-zone frog-box"><img data-audio="bass" src="images/bass-frog.svg" alt="frog playing a bass" class="frog"></div>
             <audio class="audioEl" id="bass" src="music/bass.mp3"></audio>
-            <div id="singing-frog" class="frog-box"><img data-audio="keys" src="images/guitar_frog4.svg" alt="frog singing" class="frog"></div>
+            <div id="keys-frog" class="drop-zone frog-box"><img data-audio="keys" src="images/keys-frog.svg" alt="frog singing" class="frog"></div>
             <audio class="audioEl" id="keys" src="music/keys.mp3"></audio>
         </div>
     </main>
