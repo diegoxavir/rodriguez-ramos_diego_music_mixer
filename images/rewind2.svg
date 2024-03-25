@@ -1,24 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 792 792">
+<svg id="arms" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 207 207">
   <defs>
     <style>
-      .cls-1, .cls-2, .cls-3 {
-        stroke: #231f20;
-        stroke-miterlimit: 10;
-      }
-
-      .cls-4, .cls-2 {
-        fill: #fff;
-      }
-
-      .cls-3 {
+      .cls-1 {
         fill: #b1d46b;
+        stroke: #000;
+        stroke-miterlimit: 10;
       }
     </style>
   </defs>
-  <path class="cls-3" d="m685.33,396c0-159.79-129.54-289.33-289.33-289.33-77.68,0-148.21,30.61-200.19,80.44-54.94,52.66-89.14,126.78-89.14,208.89,0,159.79,129.54,289.33,289.33,289.33s289.33-129.54,289.33-289.33Z"/>
-  <circle class="cls-2" cx="396" cy="396" r="208.89"/>
-  <path class="cls-4" d="m255.3,241.11l-59.76-54.24s-203.18,179.17-30.53,391.03l75.76-56.19s-60.6-147.63,14.53-280.59Z"/>
-  <polyline class="cls-3" points="255.57 241.35 292.85 278.63 131.62 313.44 161.48 153.19 195.81 187.11"/>
-  <path class="cls-1" d="m169.45,575.22l64.65-47.95-64.65,47.95Z"/>
+  <polygon class="cls-1" points="207 1 103.5 103.5 207 207 207 1"/>
+  <polygon class="cls-1" points="103.5 1 0 103.5 103.5 207 103.5 1"/>
 </svg>

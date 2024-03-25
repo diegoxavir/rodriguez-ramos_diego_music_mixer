@@ -33,6 +33,10 @@ h1 {
     background-position: bottom;
 }
 
+.selection-box .drop-zone {
+    background-image: none;
+}
+
 .dz1 {
     margin-left: 67px; 
 }
@@ -57,7 +61,7 @@ h1 {
     border: solid 1px #707070;
     display: flex;
     margin: 0 auto;
-    margin-top: 39px;
+    margin-top: 45px;
     margin-bottom: 39px;
     border-radius: 10px;
 
@@ -99,19 +103,10 @@ margin-left: 20px;
     margin-left: 0px;
 }
 
-#playButton {
+.buttons {
     height: 50px;
     width: 50px;
-}
-#pauseButton {
-    height: 50px;
-    width: 50px;
-}
-
-#rewindButton {
-    height:50px;
-    width:50px;
-    
+    margin-bottom: 10px;
 }
 
 .audio-controls {

@@ -49,8 +49,13 @@ function handleDrop(event) {
     audioElement.play();
 
     draggedFrog.classList.add("animate");
-}
 
+    if (this.closest('.selection-box')) {
+        draggedFrog.classList.remove("animate");
+        audioElement.pause();
+        audioElement.currentTime = 0;
+    }
+}
 //audio 
 
 
